@@ -150,6 +150,30 @@ input, select, textarea {
 		line-height: 1.35em;
 	}
 
+	#four .container.flex {
+		display: flex;
+		align-items: stretch; /* make both sides equal height */
+		gap: 6rem; /* space between text and image */
+	  }
+	  
+	  #four .text-block {
+		flex: 2; /* text gets more space */
+	  }
+	  
+	  #four .image-block {
+		flex: 1;
+		display: flex;
+		align-items: center;
+	  }
+	  
+	  #four .image-block img {
+		width: 100%;
+		height: 80%;  /* force it to match container height */
+		object-fit: cover; /* keeps it from stretching */
+		border-radius: 8px; /* optional, for nicer look */
+	  }
+	  
+
 	h3 {
 		font-size: 1.35em;
 		line-height: 1.5em;
